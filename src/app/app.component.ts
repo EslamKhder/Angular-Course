@@ -6,5 +6,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Angular';
+
+  fName: string = "eslam";
+  lName: string = "khder";
+  age: number = 20;
+  result: boolean = false;
+
+  constructor() {
+
+    setTimeout(() => {
+      this.result = true
+    },5000)
+  }
+  getAge(): number{
+    return this.age;
+  }
+
 }
