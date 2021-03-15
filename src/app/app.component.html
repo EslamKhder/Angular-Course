@@ -1,6 +1,7 @@
-<div [ngStyle]="{backgroundColor: mycolorBackGround,color: myColor}" class="alert alert-danger" role="alert">
+<div [ngClass]="{style1: myclass === 'style1',style2: myclass === 'style2'}"
+     class="alert alert-danger" role="alert">
   How Are You ?
 </div>
 
-<button (click)="doRedYellow()" type="button" class="btn btn-primary">Red | Yellow</button>
-<button (click)="doBrownWhite()"  type="button" class="btn btn-secondary">Brown | white</button>
+<button (click)="doStyle1()" type="button" class="btn btn-primary">Style 1</button>
+<button (click)="doStyle2()"  type="button" class="btn btn-secondary">Style 2</button>

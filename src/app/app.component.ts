@@ -11,15 +11,13 @@ export class AppComponent {
   friends: string[] = ["Ahmed","Karim","Yaser","Natore","Eslam"];
   mycolorBackGround: string = "black";
   myColor: String = "white";
+  myclass: string = "style1"
 
-
-  doRedYellow() {
-    this.mycolorBackGround = "red";
-    this.myColor = "yellow";
+  doStyle1() {
+    this.myclass = "style1"
   }
 
-  doBrownWhite() {
-    this.mycolorBackGround = "brown";
-    this.myColor = "white";
+  doStyle2() {
+    this.myclass = "style2"
   }
 }
