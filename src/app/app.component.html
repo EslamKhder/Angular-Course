@@ -1,14 +1,6 @@
-
-<input [(ngModel)]="myText"  type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-
-<div *ngIf="myText === 'eslam';else sir" class="alert alert-danger" role="alert">
-  {{myText}}
+<div [ngStyle]="{backgroundColor: mycolorBackGround,color: myColor}" class="alert alert-danger" role="alert">
+  How Are You ?
 </div>
-<ng-template #sir >
-  <p class="alert alert-primary" role="alert">Hi Sir</p>
-</ng-template>
-<hr>
 
-<div *ngFor="let temp of friends" class="alert alert-dark" role="alert">
-  {{temp}}
-</div>
+<button (click)="doRedYellow()" type="button" class="btn btn-primary">Red | Yellow</button>
+<button (click)="doBrownWhite()"  type="button" class="btn btn-secondary">Brown | white</button>
