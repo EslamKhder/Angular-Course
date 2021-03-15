@@ -7,19 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  fName: string = "eslam";
-  lName: string = "khder";
-  age: number = 20;
-  result: boolean = false;
-
-  constructor() {
-
-    setTimeout(() => {
-      this.result = true
-    },5000)
+  myText: string = "A simple primary alert—check it out!";
+  doTask() {
+    this.myText = "Hi Eslam";
   }
-  getAge(): number{
-    return this.age;
-  }
-
 }
