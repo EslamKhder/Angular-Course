@@ -7,5 +7,8 @@
 <ng-template #sir >
   <p class="alert alert-primary" role="alert">Hi Sir</p>
 </ng-template>
+<hr>
 
-
+<div *ngFor="let temp of friends" class="alert alert-dark" role="alert">
+  {{temp}}
+</div>

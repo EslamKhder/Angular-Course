@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
   myText: string = "";
+  friends: string[] = ["Ahmed","Karim","Yaser","Natore","Eslam"];
 
 
 }
