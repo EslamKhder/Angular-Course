@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { StudentComponent } from './student/student.component';
 import { PersonComponent } from './person/person.component';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -11,9 +12,10 @@ import { PersonComponent } from './person/person.component';
     StudentComponent,
     PersonComponent
   ],
-  imports: [
-    BrowserModule
-  ],
+    imports: [
+        BrowserModule,
+        FormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

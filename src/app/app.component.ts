@@ -7,8 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  myText: string = "A simple primary alert—check it out!";
-  doTask() {
-    this.myText = "Hi Eslam";
-  }
+  myText: string = "my content input";
+
 }
