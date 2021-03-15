@@ -1,8 +1,11 @@
 
 <input [(ngModel)]="myText"  type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
 
-<button [disabled]="myText === ''"  type="button" class="btn btn-primary">Done</button>
-<div class="alert alert-primary" role="alert">
+<div *ngIf="myText === 'eslam';else sir" class="alert alert-danger" role="alert">
   {{myText}}
 </div>
+<ng-template #sir >
+  <p class="alert alert-primary" role="alert">Hi Sir</p>
+</ng-template>
+
 
