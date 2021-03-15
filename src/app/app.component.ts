@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  myText: string = "my content input";
+  myText: string = "";
+
 
 }

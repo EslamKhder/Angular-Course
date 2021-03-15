@@ -1,6 +1,8 @@
-<div class="input-group mb-3">
-  <input [(ngModel)]="myText" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-</div>
+
+<input [(ngModel)]="myText"  type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+
+<button [disabled]="myText === ''"  type="button" class="btn btn-primary">Done</button>
 <div class="alert alert-primary" role="alert">
   {{myText}}
 </div>
+
